@@ -1,0 +1,29 @@
+version: '3'
+services:
+  www:
+    depends_on:
+      - db
+    build:
+      dockerfile: Dockerfile
+    volumes:
+      - './:/var/www/'
+    ports:
+      - 80:80
+      - 443:443
+      - 9003:9003
+      - 8000:8000
+      - 5173:5173
+    networks:
+      - lamp
+  db:
+    image: mariadb:10.6.16
+    environment:
+      MARIADB_DATABASE: test
+      MARIADB_ROOT_PASSWORD: '123'
+    networks:
+      - lamp
+    ports:
+      - 3306:3306
+networks:
+  lamp:
+    driver: bridge
