@@ -36,14 +36,20 @@ If you with, you can start a Laravel application in the way you think is better 
    ```.
 
 3. Open the folder in VSCode
-```code .```
+    ```bash
+    code .
+    ```
 
 4. Press Ctrl + Shift + P and open it as a dev container
+<img width="668" height="131" alt="image" src="https://github.com/user-attachments/assets/44f215d4-bd36-46c6-b295-dd48c7cdcea5" />
 
 5. Get your MariaDB container name
-```docker ps```
+    ```bash
+    docker ps
+    ```
 
 6. Set your MariaDB container name as DB_HOST in .env
+<img width="270" height="71" alt="image" src="https://github.com/user-attachments/assets/c490f98a-5d74-4e7b-9f47-aca0d378235e" />
 
 7. Open terminal in VSCode (inside remote container)
 
@@ -63,7 +69,7 @@ If you with, you can start a Laravel application in the way you think is better 
    ```
 
 10. Access your application in the browser  
-   The default URL is typically `http://127.0.0.1
+   The default URL is typically `http://127.0.0.1`
 
 ## 🤝 Contributing
 
